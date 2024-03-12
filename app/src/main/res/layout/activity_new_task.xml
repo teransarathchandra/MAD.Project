@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="32dp"
+        tools:srcCompat="@drawable/usericon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:text="Hello!"
+        android:textStyle="bold"
+        android:textColor="#6E6A7C"
+        app:layout_constraintLeft_toRightOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="16dp"
+        android:text="Teran Sarathchandra"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/top_background"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Daily Tasks"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <EditText
+        android:id="@+id/editTextTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Task Name"
+        android:paddingLeft="20dp"
+        android:textColor="@color/purple"
+        android:background="@drawable/background_btn_2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextStartDate"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/background_btn_2"
+        android:ems="10"
+        android:inputType="date"
+        android:paddingLeft="20dp"
+        android:text="Start Date"
+        android:textColor="@color/purple"
+        android:drawableEnd="@drawable/datepicker_purple"
+        android:paddingRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/editTextEndDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaskName">
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextEndDate"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/background_btn_2"
+        android:ems="10"
+        android:inputType="date"
+        android:paddingLeft="20dp"
+        android:text="End Date"
+        android:textColor="@color/purple"
+        android:drawableEnd="@drawable/datepicker_purple"
+        android:paddingRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaskName">
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextStartTime"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/background_btn_2"
+        android:ems="10"
+        android:inputType="time"
+        android:paddingLeft="20dp"
+        android:text="Start Time"
+        android:textColor="@color/purple"
+        android:drawableEnd="@drawable/timer_purple"
+        android:paddingRight="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/editTextEndDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStartDate">
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextEndTime"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/background_btn_2"
+        android:ems="10"
+        android:inputType="time"
+        android:paddingLeft="20dp"
+        android:text="End Time"
+        android:textColor="@color/purple"
+        android:drawableEnd="@drawable/timer_purple"
+        android:paddingRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEndDate">
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextTaskCategory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:inputType="textAutoComplete"
+        android:text="Task Subject"
+        android:drawableEnd="@drawable/dropdown_purple"
+        android:paddingRight="8dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/purple"
+        android:background="@drawable/background_btn_2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStartTime"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextTaskVenue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Venue Place"
+        android:paddingLeft="20dp"
+        android:textColor="@color/purple"
+        android:background="@drawable/background_btn_2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaskCategory"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextTaskCollaborate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:inputType="textAutoComplete"
+        android:text="Collaborate with"
+        android:drawablePadding="8dp"
+        android:paddingLeft="20dp"
+        android:drawableStart="@drawable/userplus_purple"
+        android:paddingRight="8dp"
+        android:drawableEnd="@drawable/dropdown_purple"
+        android:textColor="@color/purple"
+        android:background="@drawable/background_btn_2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaskVenue"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Details"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/purple"
+        android:background="@drawable/background_btn_2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaskCollaborate"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Create Task"
+        android:background="@drawable/background_btn_1"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="32dp"
+        tools:srcCompat="@drawable/usericon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:text="Hello!"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        app:layout_constraintLeft_toRightOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="16dp"
+        android:text="Teran Sarathchandra"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/top_background"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Today’s Tasks"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addTaskBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="32dp"
+        android:text="Add Task"
+        android:background="@drawable/background_btn_1"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="193dp"
+        android:layout_height="119dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/lightblue"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Group Project"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:text="Group Project Research"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="90dp"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/blue"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="193dp"
+        android:layout_height="119dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/lightorange"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        app:layout_constraintLeft_toRightOf="@+id/cardview1"
+        >
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Group Project"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:text="Group Project Research"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="90dp"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/orange"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="32dp"
+        android:text="Today’s Lectures"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/cardview2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addLectureBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="32dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:text="Add Lecture"
+        android:background="@drawable/background_btn_1"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/cardview2"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview3"
+        android:layout_width="350dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/lightgrey"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/textView10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Mobile Application Development"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="35dp"
+            android:text="Main Building - B502"
+            android:textColor="@color/grey"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="55dp"
+            android:text="8.30 AM - 9.30 AM"
+            android:textColor="@color/lightpurple"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/clock_purple"
+            android:drawablePadding="5dp"
+            >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="260dp"
+            tools:srcCompat="@drawable/piechart" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview4"
+        android:layout_width="350dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/lightgrey"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/cardview3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Data Structures and Algorithms"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="35dp"
+            android:text="New Building - F1303"
+            android:textColor="@color/grey"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="55dp"
+            android:text="9.30 AM - 11.30 AM"
+            android:textColor="@color/lightpurple"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/clock_purple"
+            android:drawablePadding="5dp"
+            >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="260dp"
+            tools:srcCompat="@drawable/piechart" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview5"
+        android:layout_width="350dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/lightgrey"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/cardview4"
+        app:layout_constraintLeft_toLeftOf="parent"
+    >
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Probability and Statistics"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="35dp"
+            android:text="New Building - F603"
+            android:textColor="@color/grey"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="55dp"
+            android:text="11.30 AM - 01.30 AM"
+            android:textColor="@color/lightpurple"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/clock_purple"
+            android:drawablePadding="5dp"
+            >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="260dp"
+            tools:srcCompat="@drawable/piechart" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview6"
+        android:layout_width="350dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/lightgrey"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/cardview5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Mobile Application Development"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="35dp"
+            android:text="Main Building - B502"
+            android:textColor="@color/grey"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="55dp"
+            android:text="8.30 AM - 9.30 AM"
+            android:textColor="@color/lightpurple"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/clock_purple"
+            android:drawablePadding="5dp"
+            >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="260dp"
+            tools:srcCompat="@drawable/piechart" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview7"
+        android:layout_width="350dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/lightgrey"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/cardview6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Mobile Application Development"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="35dp"
+            android:text="Main Building - B502"
+            android:textColor="@color/grey"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="55dp"
+            android:text="8.30 AM - 9.30 AM"
+            android:textColor="@color/lightpurple"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/clock_purple"
+            android:drawablePadding="5dp"
+            >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="260dp"
+            tools:srcCompat="@drawable/piechart" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
